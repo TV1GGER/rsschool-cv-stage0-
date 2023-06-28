@@ -22,3 +22,17 @@
  Develop in the IT field in the areas of QA-Manual (hereinafter QA-Automation) and Frontend Dev. 
 
 ***
+
+### __Personal qualities:__
+
+  - readiness for constant self
+  - development
+  - sociability
+  - ability to learn quickly
+  - attentiveness
+  - purposefulness
+  - activity
+  - independence
+  - logical thinking
+
+***
