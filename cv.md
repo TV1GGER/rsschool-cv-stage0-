@@ -12,3 +12,8 @@
 ##### *Telegram: @tvigger*
 
 ***
+
+### __My priorities:__ 
+ Get theoretical knowledge and consolidate it in practice, constantly upgrade Soft and Hard skills.
+
+***
