@@ -43,6 +43,81 @@
 
 
 ***
+
+### __Code example:__ 
+
+```javascript
+
+import {getTimeOfDay} from './greetings.js'
+import {animatedToggle9} from './settings.js'
+import {getLinkToImageFlickr} from './image-from-API.js'
+ 
+ const slideNext = document.querySelector('.slide-next');
+ const slidePrev = document.querySelector('.slide-prev');
+ let randomNum = getRandomNum();
+ 
+ getTimeOfDay();
+
+
+function getRandomNum(min, max) {
+    const minM = Math.ceil(min);
+    const maxM = Math.floor(max);
+    return Math.floor(Math.random() * (maxM - minM + 1)) + minM;
+    
+};
+getRandomNum(1, 20);
+
+
+
+function setBg() {
+    let body = document.querySelector('body');
+    let img = document.createElement('img');
+    const timeOfDay = getTimeOfDay();
+    let bgNum = getRandomNum(1, 20).toString().padStart(2, '0');
+   img.src = `https://raw.githubusercontent.com/TV1GGER/stage1-tasks/assets/images/`+`${timeOfDay}`+`/`+`${bgNum}`+`.jpg`;
+   img.addEventListener('load', function loadImg(){
+    body.style.backgroundImage = `url(${img.src})`;
+   });
+
+};
+
+
+
+function getSlideNext() {   
+    if(randomNum<20){
+        randomNum++;
+    }else if(randomNum===20){
+        randomNum=1;
+    };
+   if((localStorage.getItem('isOnToggleApiControls') === 'false')){
+        getLinkToImageFlickr();
+    }else if((localStorage.getItem('isOnToggleApiControls') === 'true') || (!localStorage.getItem('isOnToggleApiControls'))){
+        setBg();
+    };
+};
+
+function getSlidePrev() {   
+     if((randomNum<=20) || (randomNum!==1)){
+        randomNum--;
+    }else if(randomNum===1){
+        randomNum=20;
+    };
+   if((localStorage.getItem('isOnToggleApiControls') === 'false')){
+        getLinkToImageFlickr();
+    }else if((localStorage.getItem('isOnToggleApiControls') === 'true') || (!localStorage.getItem('isOnToggleApiControls'))){
+        setBg();
+    };
+};
+
+
+
+slideNext.addEventListener('click', getSlideNext);
+slidePrev.addEventListener('click', getSlidePrev);
+
+export {getRandomNum}
+export {setBg}
+
+```
 ***
 
 ### __Experience:__
