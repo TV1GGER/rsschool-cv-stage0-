@@ -17,3 +17,8 @@
  Get theoretical knowledge and consolidate it in practice, constantly upgrade Soft and Hard skills.
 
 ***
+
+### __My goals:__
+ Develop in the IT field in the areas of QA-Manual (hereinafter QA-Automation) and Frontend Dev. 
+
+***
