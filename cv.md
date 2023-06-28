@@ -43,3 +43,14 @@
 
 
 ***
+***
+
+### __Experience:__
+
+- [X] "Morse code decoder" task. Skills used: JavaScript, Git, VS Code. [Link to task](https://github.com/romacher/morse-decoder). [Link to source code](https://github.com/TV1GGER/morse-decoder/blob/master/src/index.js).
+
+- [X] "Plants" task. Skills used: JavaScript, Git, CSS, HTML5, Figma, Chrome DevTools, VS Code. [Link to task](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/plants/plants.md). [Link to deployed version](https://rolling-scopes-school.github.io/tv1gger-JSFEPRESCHOOL2022Q4/plants/).
+
+- [X] "Momentum" task. Skills used: JavaScript, Git, CSS, HTML5, Figma, Chrome DevTools, VS Code. [Link to task](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/momentum/momentum-stage1.md). [Link to deployed version](https://tv1gger-momentum.netlify.app/).
+
+***
