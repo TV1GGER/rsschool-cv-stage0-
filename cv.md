@@ -36,3 +36,10 @@
   - logical thinking
 
 ***
+
+### __Skills:__ 
+
+ MS Excel/Word, Adobe Photoshop, Chrome DevTools, Jira, Bug Reporting, JavaScript, Git, VS Code, CSS, HTML5, Figma.
+
+
+***
