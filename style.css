@@ -62,3 +62,71 @@ body {
   transform: scale(1.08);
   filter: blur(0px);
 }
+
+.portrait-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+  gap: 10rem;
+  margin-left: 5rem;
+  filter: grayscale(1.2);
+  transition: 0.4s;
+}
+
+.portrait-container:hover {
+  filter: grayscale(0);
+}
+
+.photo {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 190px;
+  height: 190px;
+  border: 0.5rem solid;
+  border-color: chartreuse;
+}
+
+.portrait-photo {
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+
+.portrait-content {
+  width: 50%;
+  text-align: left;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: gray;
+}
+
+.portrait-name {
+  letter-spacing: 0.5px;
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.portrait-profession {
+  letter-spacing: 0.5px;
+  font-size: 24px;
+  font-weight: 600;
+  color: chartreuse;
+  margin: 0 5rem;
+  opacity: 70%;
+  transition: 0.4s;
+}
+
+.portrait-profession:hover {
+  display: inline-block;
+  letter-spacing: 1.5px;
+  opacity: 80%;
+  transform: scale(1.1);
+}
+
+.portrait-bottom-line {
+  position: relative;
+  width: 100%;
+  height: 0.4rem;
+  background: linear-gradient(to left, #ffffff, gray, #ffffff);
+  margin-top: 4rem;
+}
