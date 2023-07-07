@@ -35,13 +35,13 @@ body {
 }  
 
 .nav-list {
-  height: 50px;
+  height: 3em;
   display: flex;
   justify-content:flex-end;
   align-items: center;
   list-style: none;
-  margin: auto 15px;
-  gap: 15px;
+  margin: auto 1.8em;
+  gap: 1em;
   
 }
 
@@ -49,8 +49,8 @@ body {
   display: inline-block;
   text-decoration: none;
   color: chartreuse;
-  letter-spacing: 0.5px;
-  font-size: 14px;
+  letter-spacing: 0.05em;
+  font-size: 0.8em;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   transition: 0.3s;
 }
@@ -79,8 +79,8 @@ body {
 .photo {
   border-radius: 50%;
   overflow: hidden;
-  width: 190px;
-  height: 190px;
+  width: 12em;
+  height: 12em;
   border: 0.5rem solid;
   border-color: chartreuse;
 }
@@ -99,14 +99,14 @@ body {
 }
 
 .portrait-name {
-  letter-spacing: 0.5px;
-  font-size: 48px;
+  letter-spacing: 0.05em;
+  font-size: 3em;
   font-weight: 800;
 }
 
 .portrait-profession {
-  letter-spacing: 0.5px;
-  font-size: 24px;
+  letter-spacing: 0.09em;
+  font-size: 1.55em;
   font-weight: 600;
   color: chartreuse;
   margin: 0 5rem;
@@ -116,7 +116,7 @@ body {
 
 .portrait-profession:hover {
   display: inline-block;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.1em;
   opacity: 80%;
   transform: scale(1.1);
 }
@@ -143,8 +143,8 @@ body {
   transition: 0.4s;
   text-align: center;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  letter-spacing: 0.5px;
-  font-size: 24px;
+  letter-spacing: 0.06em;
+  font-size: 1.2em;
   font-weight: 600;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -163,8 +163,7 @@ body {
   gap: 1rem;
   margin-left: 2rem;
   text-align: left;
-  letter-spacing: 0.5px;
-  font-size: 12px;
+  font-size: 0.55em;
   font-weight: 600;
 }
 
@@ -173,6 +172,7 @@ body {
   color: white;
   text-align: center;
   margin: 0;
+  letter-spacing: 0.1em;
   transition: 0.4s;
 }
 
@@ -191,7 +191,7 @@ body {
   flex-direction: row;
   align-items: center;
   gap: 1rem;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.01em;
 }
 
 .content-information-container {
@@ -200,8 +200,8 @@ body {
   justify-content: space-around;
   margin-top: 3rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  letter-spacing: 0.5px;
-  font-size: 1.2em;
+  letter-spacing: 0.005em;
+  font-size: 1.12em;
   font-weight: 400;
   gap: 3rem;
 }
@@ -249,7 +249,7 @@ h2 {
 
 .footer {
   max-width: 100%;
-  height: 50px;
+  height: 3em;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -257,7 +257,7 @@ h2 {
   background-color: black;
   margin-top: 3rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.05em;
   font-size: 0.9rem;
   font-weight: 550;
 }
