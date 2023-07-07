@@ -207,7 +207,7 @@ body {
 }
 
 .content-information {
-  margin-left: 5rem;
+  width: 60%;
 }
 
 h2 {
@@ -232,5 +232,17 @@ h2 {
 
 .content-information a:hover {
   color:rgb(230, 245, 16);
+}
 
+.content-information img {
+  max-width: 100%;
+  opacity: 0.4;
+  filter: grayscale(1);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.content-information img:hover {
+  opacity: 0.8;
+  filter: grayscale(0);
 }
