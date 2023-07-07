@@ -247,3 +247,38 @@ h2 {
   opacity: 0.8;
   filter: grayscale(0);
 }
+
+.footer {
+  max-width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: chartreuse;
+  background-color: black;
+  margin-top: 3rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 0.5px;
+  font-size: 0.9rem;
+  font-weight: 550;
+}
+.footer a {
+  text-decoration: none;
+  color: chartreuse;
+  transition: 0.4s;
+}
+
+.footer a:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.footer svg {
+  cursor: pointer;
+  fill: chartreuse;
+  transition: 0.4s;
+}
+
+.footer svg:hover {
+  fill: white;
+}
