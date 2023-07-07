@@ -1,0 +1,284 @@
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+      scroll-behavior: smooth;
+  }
+}
+* {
+padding: 0px;
+margin: 0px;
+border: none;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: absolute;
+  padding: 0;
+  top: 0; left: 0; bottom: 0; right: 0;
+  min-height: 100%;
+}
+
+body {
+  max-width: 1440px;
+  height: 100%;
+  
+
+}
+
+.header {
+  background-color: black;
+}  
+
+.nav-list {
+  height: 3em;
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+  list-style: none;
+  margin: auto 1.8em;
+  gap: 1em;
+  
+}
+
+.nav-link {
+  display: inline-block;
+  text-decoration: none;
+  color: chartreuse;
+  letter-spacing: 0.05em;
+  font-size: 0.8em;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: white;
+  transform: scale(1.08);
+  filter: blur(0px);
+}
+
+.portrait-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+  gap: 10rem;
+  margin-left: 5rem;
+  filter: grayscale(1.2);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.portrait-container:hover {
+  filter: grayscale(0);
+}
+
+.photo {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 12em;
+  height: 12em;
+  border: 0.5rem solid;
+  border-color: chartreuse;
+}
+
+.portrait-photo {
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+
+.portrait-content {
+  width: 50%;
+  text-align: left;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: gray;
+}
+
+.portrait-name {
+  letter-spacing: 0.05em;
+  font-size: 3em;
+  font-weight: 800;
+}
+
+.portrait-profession {
+  letter-spacing: 0.09em;
+  font-size: 1.55em;
+  font-weight: 600;
+  color: chartreuse;
+  margin: 0 5rem;
+  opacity: 70%;
+  transition: 0.4s;
+}
+
+.portrait-profession:hover {
+  display: inline-block;
+  letter-spacing: 0.1em;
+  opacity: 80%;
+  transform: scale(1.1);
+}
+
+.portrait-bottom-line {
+  position: relative;
+  width: 100%;
+  height: 0.4rem;
+  background: linear-gradient(to left, #ffffff, gray, #ffffff);
+  margin-top: 4rem;
+}
+
+.contacts {
+  position: sticky;
+  top: 1em;
+  width: 20rem;
+  height: 20rem;
+  background-color: black;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  border: 0.2rem solid;
+  border-color: chartreuse;
+  border-radius: 0.5rem;
+  transition: 0.4s;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 0.06em;
+  font-size: 1.2em;
+  font-weight: 600;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.contacts-header {
+  color: white;
+  padding-bottom: 2rem;
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style: none;
+  gap: 1rem;
+  margin-left: 2rem;
+  text-align: left;
+  font-size: 0.55em;
+  font-weight: 600;
+}
+
+.contacts-list a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 0.1em;
+  transition: 0.4s;
+}
+
+.contacts-list a:hover {
+  color:chartreuse;
+}
+
+.contacts-list a:hover * svg {
+  stroke:chartreuse;
+  transform: rotate(15deg);
+  transition: 0.4s;
+}
+
+.phone-link, .e-mail-link, .telegram-link, .git-hub-link, .linked-in-link{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  letter-spacing: 0.01em;
+}
+
+.content-information-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 3rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 0.005em;
+  font-size: 1.12em;
+  font-weight: 400;
+  gap: 3rem;
+}
+
+.content-information {
+  width: 60%;
+}
+
+h2 {
+  padding-bottom: 1rem;
+  color: black;
+  text-shadow: 0.1em 0.2em 0.2em chartreuse;
+  margin-top: 2.5rem;
+}
+
+.content-information-bottom-line {
+  width: 100%;
+  height: 0.4rem;
+  background: linear-gradient(to left, #ffffff, chartreuse, #ffffff);
+  margin-top: 3rem;
+}
+
+.content-information a {
+  text-decoration: none;
+  color:chartreuse;
+  cursor: pointer;
+}
+
+.content-information a:hover {
+  color:rgb(230, 245, 16);
+}
+
+.content-information img {
+  max-width: 100%;
+  opacity: 0.4;
+  filter: grayscale(1);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.content-information img:hover {
+  opacity: 0.8;
+  filter: grayscale(0);
+}
+
+.footer {
+  max-width: 100%;
+  height: 3em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: chartreuse;
+  background-color: black;
+  margin-top: 3rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 0.05em;
+  font-size: 0.9rem;
+  font-weight: 550;
+}
+.footer a {
+  text-decoration: none;
+  color: chartreuse;
+  transition: 0.4s;
+}
+
+.footer a:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.footer svg {
+  cursor: pointer;
+  fill: chartreuse;
+  transition: 0.4s;
+}
+
+.footer svg:hover {
+  fill: white;
+}
