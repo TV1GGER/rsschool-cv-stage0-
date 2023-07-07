@@ -203,6 +203,11 @@ body {
   letter-spacing: 0.5px;
   font-size: 1.2em;
   font-weight: 400;
+  gap: 3rem;
+}
+
+.content-information {
+  margin-left: 5rem;
 }
 
 h2 {
