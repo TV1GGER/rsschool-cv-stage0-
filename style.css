@@ -69,6 +69,7 @@ body {
   gap: 10rem;
   margin-left: 5rem;
   filter: grayscale(1.2);
+  cursor: pointer;
   transition: 0.4s;
 }
 
