@@ -132,8 +132,9 @@ body {
 }
 
 .contacts {
-  position: sticky;
+  /*position: sticky;*/
   width: 20rem;
+  height: 20rem;
   background-color: black;
   margin-top: 2rem;
   margin-left: 2rem;
