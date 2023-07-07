@@ -47,13 +47,11 @@ body {
 
 .nav-link {
   display: inline-block;
-  /*height: 60px;*/
   text-decoration: none;
   color: chartreuse;
   letter-spacing: 0.5px;
   font-size: 14px;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  /*filter: blur(0.8px);*/
   transition: 0.3s;
 }
 
