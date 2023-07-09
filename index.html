@@ -126,28 +126,84 @@
           <h2 id="code-example">Code example:</h2>
           <pre>
             <code>
-              async function getWeather() { 
-  
-                const langWeather = localStorage.getItem('lanDate');
-                let url = `https://api.openweathermap.org/data/2.5/weather?q=${inputCityName.value}&lang=${langWeather}&appid=08f2a575dda978b9c539199e54df03b0&units=metric`;
-                  const res = await fetch(url);
-                  const data = await res.json();
-                  if(data.cod === "404"){
-                    weatherIcon.className = '';
-                    temperature.textContent = `Error:${data.message}`;
-                    weatherDescription.textContent = ``;
-                  wind.textContent = ``;
-                  humidity.textContent = ``
-                  }else {
-                  weatherIcon.className = 'weather-icon owf';
-                  weatherIcon.classList.add(`owf-${data.weather[0].id}`);
-                  temperature.textContent = `${Math.round(data.main.temp)}°C`;
-                  weatherDescription.textContent = data.weather[0].description;
-                  wind.textContent = `${Windspeed}: ${Math.round(data.wind.speed)} m/s`;
-                  humidity.textContent = `${Humidity}: ${data.main.humidity}%`
-                  }
-                }
-                getWeather();
+const accBtn = document.querySelector('.accordion-btn');
+const prises_Span = document.querySelector('.basics-content-text');
+const prises_Pan1 = document.querySelector('.panel-prices1');
+const prises_PanAct1 = document.querySelector('.panel-prices1_active');
+accBtn.addEventListener('click', () => {
+    
+        
+    if (prises_Span.style.maxHeight === `0px`) {
+        prises_Span.style.maxHeight = 154 + 'px';
+        prises_Pan1.style.height = 154 + 'px';
+        prises_Pan1.classList.add('panel-prices1_active');
+        prises_Span2.style.maxHeight = 0;
+        prises_Pan2.style.height = 50 + 'px';
+        prises_Pan2.classList.remove('panel-prices2_active');
+        prises_Span3.style.maxHeight = 0;
+        prises_Pan3.style.height = 50 + 'px';
+        prises_Pan3.classList.remove('panel-prices3_active');
+        
+    } else {
+        
+        prises_Span.style.maxHeight = 0;
+        prises_Pan1.style.height = 50 + 'px';
+        prises_Pan1.classList.remove('panel-prices1_active');
+    }
+});
+
+
+const accBtn2 = document.querySelector('.accordion-btn2');
+const prises_Span2 = document.querySelector('.standard-content-text');
+const prises_Pan2 = document.querySelector('.panel-prices2');
+const prises_PanAct2 = document.querySelector('.panel-prices2_active');
+accBtn2.addEventListener('click', () => {
+    
+        
+    if (prises_Span2.style.maxHeight === `0px`) {
+        prises_Span2.style.maxHeight = 154 + 'px';
+        prises_Pan2.style.height = 154 + 'px';
+        prises_Pan2.classList.add('panel-prices2_active');
+        prises_Span.style.maxHeight = 0;
+        prises_Pan1.style.height = 50 + 'px';
+        prises_Pan1.classList.remove('panel-prices1_active');
+        prises_Span3.style.maxHeight = 0;
+        prises_Pan3.style.height = 50 + 'px';
+        prises_Pan3.classList.remove('panel-prices3_active');
+        
+    } else {
+        
+        prises_Span2.style.maxHeight = 0;
+        prises_Pan2.style.height = 50 + 'px';
+        prises_Pan2.classList.remove('panel-prices2_active');
+    }
+});
+
+const accBtn3 = document.querySelector('.accordion-btn3');
+const prises_Span3 = document.querySelector('.pro-care-content-text');
+const prises_Pan3 = document.querySelector('.panel-prices3');
+const prises_PanAct3 = document.querySelector('.panel-prices3_active');
+accBtn3.addEventListener('click', () => {
+    
+
+    if (prises_Span3.style.maxHeight === `0px`) {
+        prises_Span3.style.maxHeight = 154 + 'px';
+        prises_Pan3.style.height = 154 + 'px';
+        prises_Pan3.classList.add('panel-prices3_active');
+        prises_Span.style.maxHeight = 0;
+        prises_Pan1.style.height = 50 + 'px';
+        prises_Pan1.classList.remove('panel-prices1_active');
+        prises_Span2.style.maxHeight = 0;
+        prises_Pan2.style.height = 50 + 'px';
+        prises_Pan2.classList.remove('panel-prices2_active');
+        
+    } else {
+        
+        prises_Span3.style.maxHeight = 0;
+        prises_Pan3.style.height = 50 + 'px';
+        prises_Pan3.classList.remove('panel-prices3_active');
+    }
+});
             </code>
             </pre>
           <div class="content-information-bottom-line"></div>
