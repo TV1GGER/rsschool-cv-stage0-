@@ -124,19 +124,30 @@
           </article>
           <article>
           <h2 id="code-example">Code example:</h2>
-          <p>Kata(from Codewars): “Bit Counting”.</p>
           <pre>
             <code>
-              var countBits = function(n) {
-                let count=0;
-               let parseIntBinary = n.toString(2);
-              for(let i=0; i&lt;parseIntBinary.length; i++){
-                if(parseIntBinary[i].includes(1)){
-                  count++;
+              async function getWeather() { 
+  
+                const langWeather = localStorage.getItem('lanDate');
+                let url = `https://api.openweathermap.org/data/2.5/weather?q=${inputCityName.value}&lang=${langWeather}&appid=08f2a575dda978b9c539199e54df03b0&units=metric`;
+                  const res = await fetch(url);
+                  const data = await res.json();
+                  if(data.cod === "404"){
+                    weatherIcon.className = '';
+                    temperature.textContent = `Error:${data.message}`;
+                    weatherDescription.textContent = ``;
+                  wind.textContent = ``;
+                  humidity.textContent = ``
+                  }else {
+                  weatherIcon.className = 'weather-icon owf';
+                  weatherIcon.classList.add(`owf-${data.weather[0].id}`);
+                  temperature.textContent = `${Math.round(data.main.temp)}°C`;
+                  weatherDescription.textContent = data.weather[0].description;
+                  wind.textContent = `${Windspeed}: ${Math.round(data.wind.speed)} m/s`;
+                  humidity.textContent = `${Humidity}: ${data.main.humidity}%`
+                  }
                 }
-              }
-                return count;
-              };
+                getWeather();
             </code>
             </pre>
           <div class="content-information-bottom-line"></div>
