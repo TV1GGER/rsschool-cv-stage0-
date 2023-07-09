@@ -51,7 +51,7 @@ body {
   text-decoration: none;
   color: chartreuse;
   letter-spacing: 0.05em;
-  font-size: 0.8em;
+  font-size: 1.0vw;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   transition: 0.3s;
 }
@@ -60,6 +60,14 @@ body {
   color: white;
   transform: scale(1.08);
   filter: blur(0px);
+}
+
+.nav_active {
+  transform: translateX(0);
+}
+
+.burger__btn {
+  display: none;
 }
 
 .main {
@@ -112,16 +120,16 @@ body {
 
 .portrait-name {
   letter-spacing: 0.05em;
-  font-size: 3em;
+  font-size: 4vw;
   font-weight: 800;
 }
 
 .portrait-profession {
   letter-spacing: 0.09em;
-  font-size: 1.55em;
+  font-size: 2vw;
   font-weight: 600;
   color: chartreuse;
-  margin: 0 5rem;
+  margin: 0 8vw;
   opacity: 70%;
   transition: 0.4s;
 }
@@ -144,8 +152,8 @@ body {
 .contacts {
   position: sticky;
   top: 1em;
-  width: 20rem;
-  height: 20rem;
+  max-width: 20rem;
+  max-height: 20rem;
   background-color: black;
   margin-top: 2rem;
   margin-left: 2rem;
@@ -156,15 +164,17 @@ body {
   text-align: center;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   letter-spacing: 0.06em;
-  font-size: 1.2em;
+  font-size: 1.4vw;
   font-weight: 600;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 1.4vw;
+  padding-bottom: 1.4vw;
+  padding-right: 1.4vw;
+  padding-left: 1.4vw;
 }
 
 .contacts-header {
   color: white;
-  padding-bottom: 2rem;
+  padding-bottom: 1.4vw;
 }
 
 .contacts-list {
@@ -172,11 +182,15 @@ body {
   flex-direction: column;
   justify-content: space-between;
   list-style: none;
-  gap: 1rem;
-  margin-left: 2rem;
+  gap: 0.5vw;
   text-align: left;
-  font-size: 0.55em;
+  font-size: 0.7vw;
   font-weight: 600;
+}
+
+.contacts-list svg {
+  width: 2.2vw;
+  height: 2.2vw;
 }
 
 .contacts-list a {
@@ -213,13 +227,13 @@ body {
   margin-top: 3rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   letter-spacing: 0.005em;
-  font-size: 1.12em;
+  font-size: 1.2vw;
   font-weight: 400;
   gap: 3rem;
 }
 
 .content-information {
-  width: 60%;
+  max-width: 60%;
   color: gray;
 }
 
@@ -276,7 +290,7 @@ h2 {
   margin-top: 3rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   letter-spacing: 0.05em;
-  font-size: 0.9rem;
+  font-size: 1.1vw;
   font-weight: 550;
 }
 
@@ -294,9 +308,165 @@ h2 {
 .footer svg {
   cursor: pointer;
   fill: chartreuse;
+  width: 14vw;
+  height: 2vw;
   transition: 0.4s;
 }
 
 .footer svg:hover {
   fill: white;
 }
+
+@media screen and (max-width: 768px) {
+  @media (prefers-reduced-motion: no-preference) { 
+      :root {
+      scroll-behavior: smooth;
+  }}  
+
+  .header-container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .nav-list {
+    height: 3em;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    list-style: none;
+    margin: auto 1.8em;
+    gap: 1em;
+    background-color: black;
+  }
+  
+  .nav-link {
+    display: inline-block;
+    text-decoration: none;
+    color: chartreuse;
+    letter-spacing: 0.05em;
+    font-size: 1.0vw;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.3s;
+  }
+
+  .main-container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .footer-container {
+    max-width: 768px;
+    margin: 0 auto;
+    height: 3em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: chartreuse;
+    margin-top: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 0.05em;
+    font-size: 1.1vw;
+    font-weight: 550;
+  }
+
+  .content-information {
+    max-width: 60%;
+    color: gray;
+  }
+
+  .portrait-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+    gap: 3rem;
+    margin-left: 1rem;
+    filter: grayscale(1.2);
+    cursor: pointer;
+    transition: 0.4s;
+  }
+
+  .portrait-content {
+    width: 50%;
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: gray;
+  }
+  
+  .portrait-name {
+    letter-spacing: 0.05em;
+    font-size: 4vw;
+    font-weight: 800;
+  }
+  
+  .portrait-profession {
+    letter-spacing: 0.09em;
+    font-size: 2vw;
+    font-weight: 600;
+    color: chartreuse;
+    opacity: 70%;
+    transition: 0.4s;
+  }
+
+  pre {
+    overflow-x: scroll;
+  }
+
+}
+
+  @media screen and (max-width: 767px) {
+    @media (prefers-reduced-motion: no-preference) { 
+        :root {
+        scroll-behavior: smooth;
+    }} 
+
+    .photo {
+      display: none;
+    }
+
+    .nav-list {
+      display: none;
+    }
+
+    .burger__btn {
+      width: 40px;
+      height: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;
+      
+  }
+  .span-line {
+      display:block;
+      height: 2px;
+      border: 1px solid #717171;
+  }
+
+  .nav-close {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 11;
+    cursor: pointer;
+}
+.nav-close-x {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    
+}
+.nav-close-x:first-child {
+    transform: translateY(-50%) rotate(45deg); 
+}
+.nav-close-x:last-child {
+    transform: translateY(-50%) rotate(-45deg); 
+}
+
+
+  }
